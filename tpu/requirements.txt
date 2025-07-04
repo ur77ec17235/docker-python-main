@@ -1,0 +1,49 @@
+# TPU Utils
+tpu-info
+# Tensorflow packages
+tensorflow-tpu==${TENSORFLOW_VERSION}
+--find-links https://storage.googleapis.com/libtpu-tf-releases/index.html
+tensorflow_hub
+tensorflow-io
+tensorflow-probability
+# Torch packages
+torch==${TORCH_VERSION}
+https://storage.googleapis.com/pytorch-xla-releases/wheels/tpuvm/torch_xla-${TORCH_VERSION}+libtpu-${PYTHON_WHEEL_VERSION}-${PYTHON_WHEEL_VERSION}-${TORCH_LINUX_WHEEL_VERSION}.whl
+torchaudio==${TORCHAUDIO_VERSION}
+torchvision==${TORCHVISION_VERSION}
+# Jax packages
+jax[tpu]>=0.4.34
+--find-links https://storage.googleapis.com/jax-releases/libtpu_releases.html
+distrax
+flax
+git+https://github.com/deepmind/dm-haiku
+jraph
+optax
+trax
+# Jupyter packages
+jupyter-lsp==1.5.1
+jupyterlab
+notebook
+papermill
+python-lsp-server[all]
+# Keras Packages
+keras>3
+keras-cv
+keras-nlp
+# Kaggle Packages
+kagglehub
+# Other useful packages, add more here
+accelerate
+albumentations
+diffusers
+einops
+fastparquet
+matplotlib
+opencv-python
+opencv-python-headless
+pandas
+pyarrow
+scikit-learn
+seaborn
+timm
+transformers
